@@ -1,0 +1,37 @@
+[debug] [2024-06-14T15:35:56.372Z] ----------------------------------------------------------------------
+[debug] [2024-06-14T15:35:56.374Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Danzo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-06-14T15:35:56.375Z] CLI Version:   13.11.2
+[debug] [2024-06-14T15:35:56.375Z] Platform:      win32
+[debug] [2024-06-14T15:35:56.375Z] Node Version:  v22.1.0
+[debug] [2024-06-14T15:35:56.375Z] Time:          Fri Jun 14 2024 16:35:56 GMT+0100 (British Summer Time)
+[debug] [2024-06-14T15:35:56.375Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-14T15:35:56.436Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-14T15:35:56.437Z] > authorizing via signed-in user (danielsaanu01@gmail.com)
+[debug] [2024-06-14T15:35:56.437Z] [iam] checking project foreign-grillz for permissions ["firebase.projects.get"]
+[debug] [2024-06-14T15:35:56.438Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/foreign-grillz:testIamPermissions [none]
+[debug] [2024-06-14T15:35:56.438Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/foreign-grillz:testIamPermissions x-goog-quota-user=projects/foreign-grillz
+[debug] [2024-06-14T15:35:56.439Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/foreign-grillz:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-14T15:35:56.660Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/foreign-grillz:testIamPermissions 200
+[debug] [2024-06-14T15:35:56.660Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/foreign-grillz:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-14T15:35:56.660Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz [none]
+[debug] [2024-06-14T15:35:56.950Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz 200
+[debug] [2024-06-14T15:35:56.950Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz {"projectId":"foreign-grillz","projectNumber":"574482170225","displayName":"foreign grillz","name":"projects/foreign-grillz","resources":{"hostingSite":"foreign-grillz","realtimeDatabaseInstance":"foreign-grillz-default-rtdb"},"state":"ACTIVE","etag":"1_13ebdb61-4474-4f63-b554-39e131dc8fe5"}
+[info] 
+[info] === Serving from 'C:\Users\Danzo\IdeaProjects\ForeignGrillz'...
+[info] 
+[debug] [2024-06-14T15:35:56.953Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/foreign-grillz/sites 
+[debug] [2024-06-14T15:35:57.794Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/foreign-grillz/sites 200
+[debug] [2024-06-14T15:35:57.794Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/foreign-grillz/sites {"sites":[{"name":"projects/foreign-grillz/sites/foreign-grillz","defaultUrl":"https://foreign-grillz.web.app","appId":"1:574482170225:web:184dd6135fd7024730f6d0","type":"DEFAULT_SITE"}]}
+[debug] [2024-06-14T15:35:57.794Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz/webApps/1:574482170225:web:184dd6135fd7024730f6d0/config [none]
+[debug] [2024-06-14T15:35:58.458Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz/webApps/1:574482170225:web:184dd6135fd7024730f6d0/config 200
+[debug] [2024-06-14T15:35:58.458Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz/webApps/1:574482170225:web:184dd6135fd7024730f6d0/config {"projectId":"foreign-grillz","appId":"1:574482170225:web:184dd6135fd7024730f6d0","databaseURL":"https://foreign-grillz-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"foreign-grillz.appspot.com","apiKey":"AIzaSyAW9owzQxiOpEFjR0mo7xJExiQdTb3hDaY","authDomain":"foreign-grillz.firebaseapp.com","messagingSenderId":"574482170225","measurementId":"G-0M266NJ08R"}
+[debug] [2024-06-14T15:35:58.461Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz [none]
+[debug] [2024-06-14T15:35:58.691Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz 200
+[debug] [2024-06-14T15:35:58.691Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/foreign-grillz {"projectId":"foreign-grillz","projectNumber":"574482170225","displayName":"foreign grillz","name":"projects/foreign-grillz","resources":{"hostingSite":"foreign-grillz","realtimeDatabaseInstance":"foreign-grillz-default-rtdb"},"state":"ACTIVE","etag":"1_13ebdb61-4474-4f63-b554-39e131dc8fe5"}
+[info] i  hosting[foreign-grillz]: Serving hosting files from: src {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1msrc\u001b[22m"}}
+[info] +  hosting[foreign-grillz]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [14/Jun/2024:15:36:01 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Jun/2024:15:36:01 +0000] \"GET / HTTP/1.1\" 500 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Jun/2024:15:36:01 +0000] "HEAD / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Jun/2024:15:36:01 +0000] \"HEAD / HTTP/1.1\" 500 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Jun/2024:15:36:01 +0000] "HEAD / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Jun/2024:15:36:01 +0000] \"HEAD / HTTP/1.1\" 500 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Jun/2024:15:36:02 +0000] "HEAD / HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Jun/2024:15:36:02 +0000] \"HEAD / HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\""}}
